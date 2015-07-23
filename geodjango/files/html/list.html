@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>List users</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      
+    <style>
+          body {
+    background: #ffa633 none repeat scroll 0 0;
+    color: #080808;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+    
+
+    </style>
+  
+    
+  
+     
+  </head>
+  <body >
+    <div style="position: relative;top:100px;width: 300px;margin: 0 auto;">
+    {% for x in myarray %}
+      
+    <div class="alert alert-success" role="alert"> <img class="img-rounded"  width="30px"src="{{ x.1}}"> {{ x.0 }} --> {{ x.2}} KM away </div>
+    
+    
+    {% endfor %}
+    
+    </div>
+  </body>
+ 
+</html>
+
